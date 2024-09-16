@@ -1,13 +1,8 @@
 spring:
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/E-Commerce
-#    username: postgres
-#    password: sa
-#    driver-class-name: org.postgresql.Driver
   datasource:
-    url: jdbc:postgresql://ep-solitary-resonance-a1e8orhq.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
-    username: neondb_owner
-    password: mYBsbJwD3aj2
+    url: jdbc:postgresql://localhost:5432/E-Commerce
+    username: postgres
+    password: sa
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

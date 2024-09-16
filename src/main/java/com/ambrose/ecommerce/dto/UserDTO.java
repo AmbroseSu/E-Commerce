@@ -24,5 +24,7 @@ public class UserDTO {
   private List<Long> deliveryIds;
   private List<Long> ordersIds;
   private List<Long> returnsIds;
+  private List<Long> messagesIds;
+  private List<Long> userChatsIds;
   private Long cartId;
 }

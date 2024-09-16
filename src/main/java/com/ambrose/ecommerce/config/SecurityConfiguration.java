@@ -53,8 +53,8 @@ public class SecurityConfiguration implements WebMvcConfigurer {
 
 
 
-        //      .oauth2Login(Customizer.withDefaults())
-        //      .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.NEVER))
+        //      .oauth2Login(Customizer.withDefaults()
+        .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authenticationProvider(authenticationProvider()).addFilterBefore(
             jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class
         );

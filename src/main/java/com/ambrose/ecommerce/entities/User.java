@@ -48,6 +48,10 @@ public class User implements UserDetails {
   @OneToOne
   @JoinColumn(name = "cartId")
   private Cart cart;
+  @OneToMany(mappedBy = "sender", cascade = CascadeType.ALL)
+  private List<Message> messages;
+  @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+  private List<UserChat> userChats;
   private boolean isEnabled = false;
 
   @Override
